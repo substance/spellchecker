@@ -1,0 +1,16 @@
+{
+  "name": "substance-spellchecker",
+  "version": "0.1.0",
+  "description": "A proxy for server side spell-checkers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Oliver Buchtala <oliver.buchtala@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "nodehun": "^2.0.11"
+  }
+}
