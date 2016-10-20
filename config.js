@@ -1,4 +1,0 @@
-module.exports = {
-  dict: 'dict/en_US.dic',
-  aff: 'dict/en_US.aff'
-}

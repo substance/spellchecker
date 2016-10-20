@@ -23,7 +23,6 @@ app.use(function(req, res, next) {
 // get corrections for a piece of plain-text
 app.post('/api/check', function (req, res) {
   var text = req.body.text;
-  console.log('### received check request for', text, req.body)
   spellchecker.check(text, function(err, result) {
     if (err) {
       res.status(500).send('Internal Error')
