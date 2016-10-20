@@ -56,7 +56,7 @@ class NodehunSpellchecker {
 
 function splitText(text) {
   let words = []
-  let re = /\b\w+\b/g
+  let re = /[A-Za-z\u00C0-\u017F]+/g
   let match
   while( (match = re.exec(text)) ) {
     words.push({
