@@ -17,8 +17,7 @@ const cfg = new Configurator().import(config)
 window.onload = function() {
   const doc = cfg.createArticle(fixture)
   let editSession = new DocumentSession(doc, {
-    configurator: cfg,
-    context: {}
+    configurator: cfg
   })
   // TODO: we need to discuss how such session extensions should be
   // registered
