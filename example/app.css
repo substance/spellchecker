@@ -5,9 +5,6 @@
 @import '../node_modules/substance/dist/substance-reset.css';
 @import '../node_modules/substance/dist/substance-pagestyle.css';
 
-/* spell-check */
-@import '../src/spell-check/_spell-error.css';
-
 body {
   overflow: hidden;
 }

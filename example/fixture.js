@@ -34,21 +34,4 @@ export default function fixture(doc) {
   })
   body.show('p4')
 
-  // using data directly means that this happens outside of the session
-  doc.data.create({
-    type: 'spell-error',
-    id: 'se1',
-    path: ['p1', 'content'],
-    startOffset: 240,
-    endOffset: 244,
-    suggestions: SUGGESTIONS
-  })
-  doc.data.create({
-    type: 'spell-error',
-    id: 'se2',
-    path: ['p1', 'content'],
-    startOffset: 279,
-    endOffset: 286,
-    suggestions: SUGGESTIONS
-  })
 }

@@ -1,10 +1,8 @@
 import {
   Configurator, DocumentSession, ProseEditor, ProseEditorPackage,
-  Tool
+  Tool, SpellCheckPackage, SpellCheckManager
 } from 'substance'
 
-import SpellCheckPackage from '../src/spell-check/SpellCheckPackage'
-import SpellCheckManager from '../src/spell-check/SpellCheckManager'
 import fixture from './fixture'
 
 const config = {
