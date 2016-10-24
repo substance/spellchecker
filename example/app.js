@@ -1,5 +1,5 @@
 import {
-  Configurator, DocumentSession, ProseEditor, ProseEditorPackage,
+  Configurator, EditorSession, ProseEditor, ProseEditorPackage,
   Tool, SpellCheckPackage, SpellCheckManager
 } from 'substance'
 
@@ -16,16 +16,15 @@ const cfg = new Configurator().import(config)
 
 window.onload = function() {
   const doc = cfg.createArticle(fixture)
-  let editSession = new DocumentSession(doc, {
+  let editorSession = new EditorSession(doc, {
     configurator: cfg
   })
   // TODO: we need to discuss how such session extensions should be
   // registered
-  let spellchecker = new SpellCheckManager(editSession)
+  let spellchecker = new SpellCheckManager(editorSession)
 
   var editor = ProseEditor.mount({
-    editSession: editSession,
-    configurator: cfg,
+    editorSession: editorSession,
     scrollbarType: 'substance'
   }, document.body)
 
