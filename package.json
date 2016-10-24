@@ -4,7 +4,8 @@
   "description": "A proxy for server side spell-checkers.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node make dev -s -w"
   },
   "author": "Oliver Buchtala <oliver.buchtala@gmail.com>",
   "license": "MIT",
